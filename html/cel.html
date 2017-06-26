@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link rel="stylesheet" href="../css/main.css" />
+  <title>Home</title>
+</head>
+
+<body>
+  <header class="elemento1">
+    <img src="../imagen/imagen1.jpg" class="imagen" />
+    <h1 class="titulo">Los mejores Celulares</h1>
+    <nav class="menu">
+      <a id="menu" href="../index.html">Inicio</a>
+      <a id="menu" href="../html/compu.html">Computadoras</a>
+      <a id="menu" href="../html/cel.html">Celulares</a>
+      <a id="menu" href="../html/table.html">Tables</a>
+    </nav>
+  </header>
+<!--
+  <div class="buscador">
+    <aside>
+
+        <blockquote id="nota2"><img src="../imagen/audio.jpeg" class="imagen2"/>En la compra de un cel audifonos gratis</blockquote>
+    </aside>
+  </div>
+  <div class="buscador1">
+ <input type="text" class="form-control pull-right" size="20px" id="search" placeholder="Escribe tu busqueda.." required="required">
+  </div>
+-->
+  <div class="elemento2">
+
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+        <img src="../imagen/cel1.jpeg" class="imagen1" id="imagenfrente"/>
+      <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+        <img src="../imagen/cel1.jpeg" class="imagen1" id="imagenfrente"/>
+      <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+
+
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+      <img src="../imagen/cel2.jpeg" class="imagen1" id="imagenfrente"/>
+      <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+      <img src="../imagen/cel2.jpeg" class="imagen1" id="imagenfrente"/>
+  <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+      <img src="../imagen/cel1.jpeg" class="imagen1" id="imagenfrente"/>
+      <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+    <div class="contenImagen">
+      <h3>Sony 34e</h3>
+      <img src="../imagen/cel2.jpeg" class="imagen1" id="imagenfrente"/>
+      <div class="botonC" > <a id="boton" href="equipos/equipoCel.html">description</a>  <a id="boton">Compra</a></div>
+    </div>
+
+  </div>
+  <div class="elemento3">
+    <a href="https://es-la.facebook.com/onlinetecnologia1/" id="pie">Facebook</a>
+    <a href="https://www.youtube.com/watch?v=1itm2NXQBmI" id="pie">Youtube</a>
+
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script>
+   // Write on keyup event of keyword input element
+   $(document).ready(function(){
+   $("#search").keyup(function(){
+   _this = this;
+   // Show only matching TR, hide rest of them
+   $.each($("#mytable tbody tr"), function() {
+   if($(this).text().toLowerCase().indexOf($(_this).val().toLowerCase()) === -1)
+   $(this).hide();
+   else
+   $(this).show();
+   });
+   });
+  });
+  </script>
+
+</body>
+
+
+</html>
